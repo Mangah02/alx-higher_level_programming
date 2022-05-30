@@ -2,6 +2,7 @@
 Project done during Software Engineering studies at ALX School. It aims to learn about variables, basics commands (print) and handle strings with Python.
 
 Technologies
+
 . Shell Scripts are written in Bash 
 . Python Scripts are written with Python 2.8
 . C files are compiled using gcc 
@@ -9,7 +10,8 @@ Technologies
 
                Files
    Filename	Description
-0. run	Shell script that runs a Python script, where its name is stored in an environment variable
+   
+0.  run	Shell script that runs a Python script, where its name is stored in an environment variable
 1.  run_inline	Shell script that runs a Python script, where Python code is saved in an environment variable
 2.  print.py	Python script that prints a message
 3.  print_number.py	Prints a message with print function, using format
