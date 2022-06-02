@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-if __name__ == "__main__":
-    import sys
+
+
+if __name__ == '__main__':
+    from sys import argv
 
     sum = 0
+    for i, arg in enumerate(argv[1:]):
+        sum += int(arg)
 
-    for i in range(len(sys.argv) - 1):
-        sum += int(sys.argv[i + 1])
-
-    print("{:d}".format(sum))
+    print('{:d}'.format(sum))
