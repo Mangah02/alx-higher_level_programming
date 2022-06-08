@@ -1,12 +1,16 @@
 #!/usr/bin/python3
-def square(x):
-    return x * x
+
 
 def square_matrix_simple(matrix=[]):
+    return list(map(lambda x: list(map(lambda y: y ** 2, x)), matrix))
 
-    new_list = matrix[:]
+if __name__ == '__main__':
+    matrix = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]
+    ]
 
-    for i in range(len(new_list)):
-        new_list[i] = map(square, new_list[i])
-
-    return new_list
+    new_matrix = square_matrix_simple(matrix)
+    print(new_matrix)
+    print(matrix)
