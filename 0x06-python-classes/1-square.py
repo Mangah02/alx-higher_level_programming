@@ -1,10 +1,9 @@
 #!/usr/bin/python3
+"""File defines a square"""
+
+
 class Square:
-    """Class Square that defines a square object
-    """
-    def __init__(self, size):
-        """Initialize method that stores the size of the square
-        Args:
-            param1 (int): size of the square
-        """
+    """A class Square that defines a square"""
+    def __init__(self, size=None):
+        """Initializes private attribute size """
         self.__size = size
