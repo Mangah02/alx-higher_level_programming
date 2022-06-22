@@ -1,6 +1,6 @@
                     Python - Classes and Objects
                     
-     python filed
+     python file
      
  0. Write an empty class Square that defines a square
  1. Write a class Square that defines a square by: (based on 0-square.py)
