@@ -1,3 +1,3 @@
 #!/bin/bash
-# Script that shows the response body redirecting /route_1
-curl -Ls "$1"
+# bash script that takes in a URL, sends a GET request
+curl -sLX GET "$1"
