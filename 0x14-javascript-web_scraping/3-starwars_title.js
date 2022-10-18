@@ -1,19 +1,9 @@
 #!/usr/bin/node
-
 const request = require('request');
-
-const options = {
-  url: 'http://swapi.co/api/films/' + process.argv[2],
-  headers: {
-    'User-Agent': 'request'
+const id = process.argv[2];
+request('http://swapi.co/api/films/' + id + '/', function (error, response, body) {
+  if (error == null) {
+    const json = JSON.parse(body);
+    console.log(json.title);
   }
-};
-
-function callback (error, response, body) {
-  if (!error && response.statusCode === 200) {
-    const info = JSON.parse(body);
-    console.log(info['title']);
-  }
-}
-
-request(options, callback);
+});
